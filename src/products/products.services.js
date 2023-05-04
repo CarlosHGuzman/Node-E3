@@ -41,7 +41,7 @@ const deleteProduct = (response, request) => {
     productControllers.deleteProduct(id)
         .then((data) => {
             if(data){
-                response.status(204).json({message: 'created'})
+                response.status(204).json({message: 'deleted'})
             }else{
                 response.status(404).json({message: 'Product not found'})
             }
